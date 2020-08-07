@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Quicksand:wght@300;500;700&family=Roboto:wght@300;400&display=swap');
+
+/* general */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #8D96BD;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* common tags */
+.subtitle {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3D4F9F;
+}
+
+.title-medium {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #3D4F9F;
+}
+
+.title-large {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 45px;
+  color: #3D4F9F;
+}
+
+.title-main {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 56px;
+  color: #3D4F9F;
+}
+
+/* navigation */
+.menu__item {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #697CA6;
+  text-shadow: 0px 0px 5px #E6E6E6;
+}
+
+/* intro */
+/* app */
+/* about */
+.features__title {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+  color: #4074F8;
+}
+
+.features__text {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 19px;
+  color: #ADB3CB;
+}
+
+/* stats */
+.stats__item--first {
+  color: #fff;
+  text-align: right;
+}
+
+.stats__item--second {
+  color: #5E80FF;
+}
+
+.stats__title {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 48px;
+  line-height: 78px;
+}
+
+.stats__text {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* quotes */
+.quotes__text {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 23px;
+  color: #A4ABC8;
+}
+
+.review__text {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #676F95;
+}
+
+/* faq */
+.tab__title {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #8E96B7;
+}
+
+.tab__text {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  color: #8D96BD;
+}
+
+/* newsletter */
+.newsletter__title {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3D4F9F;
+}
+
+.newsletter__text {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  color: #8D96BD;
+}
