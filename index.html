@@ -11,7 +11,7 @@
 <body>
   <header class='page-header'>
     <div class='navigation'>
-      <a href='#'><img src='https://via.placeholder.com/26' width='26' height='26'></a>
+      <a class='navigation__logo' href='#'><img></a>
       <nav class='navigation__menu menu'>
         <ul class='menu__list'>
           <li class='menu__item'><a href='#'>Home</a></li>
@@ -22,10 +22,10 @@
         </ul>
       </nav>
       <ul class='navigation__social social'>
-        <li class='social__item'><a href='#'><img src='img/facebook__logo.svg' width='8.71' height='17' alt='Facebook' /></a></li>
-        <li class='social__item'><a href='#'><img src='img/telegram__logo.svg' width='14.7' height='11.79' alt='Telegram' /></a></li>
-        <li class='social__item'><a href='#'><img src='img/twitter__logo.svg' width='16.51' height='13.78' alt='Twitter' /></a></li>
-        <li class='social__item'><a href='#'><img src='img/medium__logo.svg' width='16.51' height='12.86' alt='Medium' /></a></li>
+        <li class='social__item'><a href='#'><img class='svg' src='img/facebook__logo.svg' width='9' height='17' alt='Facebook' /></a></li>
+        <li class='social__item'><a href='#'><img class='svg' src='img/telegram__logo.svg' width='15' height='13' alt='Telegram' /></a></li>
+        <li class='social__item'><a href='#'><img class='svg' src='img/twitter__logo.svg' width='18' height='14' alt='Twitter' /></a></li>
+        <li class='social__item'><a href='#'><img class='svg' src='img/medium__logo.svg' width='17' height='14' alt='Medium' /></a></li>
       </ul>
       <button class='navigation__btn'>Get started</button>
     </div>
@@ -43,25 +43,27 @@
 
     <section class='customers'>
       <ul class='customers__list'>
-        <li class='customer__item'><a href='#'><img src='img/bitbucket__logo.svg' width='116.59' height='29' alt='Bitbucket' /></a></li>
-        <li class='customer__item'><a href='#'><img src='img/applewatch__logo.svg' width='116.58' height='24.29' alt='Apple Watch' /></a></li>
-        <li class='customer__item'><a href='#'><img src='img/facebook__logo-big.svg' width='116.58' height='22.37' alt='Facebook' /></a></li>
-        <li class='customer__item'><a href='#'><img src='img/atlassian__logo.svg' width='116.57' height='24.07' alt='Atlassian' /></a></li>
-        <li class='customer__item'><a href='#'><img src='img/audi__logo.svg' width='116.58' height='28.94' alt='Audi' /></a></li>
+        <li class='customer__item'><a href='#'><img class='svg' src='img/bitbucket__logo.svg' width='116.59' height='29' alt='Bitbucket' /></a></li>
+        <li class='customer__item'><a href='#'><img class='svg' src='img/applewatch__logo.svg' width='116.58' height='24.29' alt='Apple Watch' /></a></li>
+        <li class='customer__item'><a href='#'><img class='svg' src='img/facebook__logo-big.svg' width='116.58' height='22.37' alt='Facebook' /></a></li>
+        <li class='customer__item'><a href='#'><img class='svg' src='img/atlassian__logo.svg' width='116.57' height='24.07' alt='Atlassian' /></a></li>
+        <li class='customer__item'><a href='#'><img class='svg' src='img/audi__logo.svg' width='116.58' height='28.94' alt='Audi' /></a></li>
       </ul>
     </section>
 
     <section class='app'>
-      <p class='app__subtitle subtitle'>Desktop and mobile app</p>
-      <h2 class='app__title title-large'><strong>Plan</strong> and <strong>manage</strong></h2>
-      <p class='app__text'>
-        Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens
-        gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea.
-        Mea ex malis mollis oporteat. Eum an expetenda consequat.
-      </p>
-      <div class='app__buttons-wrapper'>
-        <button class='app__button'>View video</button>
-        <button class='app__button'>See features</button>
+      <div class='app__wrapper'>
+        <p class='app__subtitle subtitle'>Desktop and mobile app</p>
+        <h2 class='app__title title-large'><strong>Plan</strong> and <strong>manage</strong></h2>
+        <p class='app__text'>
+          Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens
+          gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea.
+          Mea ex malis mollis oporteat. Eum an expetenda consequat.
+        </p>
+        <div class='app__buttons-wrapper'>
+          <button class='app__button'>View video</button>
+          <button class='app__button'>See features</button>
+        </div>
       </div>
     </section>
 
@@ -102,9 +104,9 @@
         </li>
       </ul>
       <div class='about__buttons-wrapper'>
-        <button class='about__button'>Read more</button>
+        <button class='about__button about__button--more'>Read more</button>
         <span class='about__text'>or</span>
-        <button class='about__button'>Get started</button>
+        <button class='about__button about__button--started'>Get started</button>
       </div>
     </section>
 
@@ -150,58 +152,82 @@
     </section>
 
     <section class='quotes'>
-      <p class='quotes_subtitle subtitle'>Testimonials</p>
-      <h2 class='quotes__title title-large'>Customers's <strong>quotes</strong></h2>
-      <p class='quotes__text'>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.</p>
-      <div class='quotes__slider'>
-        <div class='quotes__card review'>
-          <p class='review__text'>
-            Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos,
-            vero tractatos ius an, in mel diceret persecuti.
-          </p>
-          <img class='review__author' src='img/review__author--1.jpg' alt='Review author' width='62' height='62'>
+      <div class="quotes__wrapper">
+        <div class='quotes__info'>
+          <p class='quotes_subtitle subtitle'>Testimonials</p>
+          <h2 class='quotes__title title-large'><strong>Customers's quotes</strong></h2>
+          <p class='quotes__text'>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.</p>
+        </div>
+        <div class='quotes__slider'>
+          <div class='quotes__card review'>
+            <p class='review__text'>
+              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos,
+              vero tractatos ius an, in mel diceret persecuti.
+            </p>
+            <img class='review__author' src='img/review__author--1.jpg' alt='Review author' width='62' height='62'>
+          </div>
+
+          <div class='quotes__card review review--inactive'>
+            <p class='review__text'>
+              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos,
+              vero tractatos ius an, in mel diceret persecuti.
+            </p>
+            <img class='review__author' src='img/review__author--1.jpg' alt='Review author' width='62' height='62'>
+          </div>
         </div>
       </div>
     </section>
 
     <section class='faq'>
-      <p class='faq_subtitle subtitle'>Customer help</p>
-      <h2 class='faq__title title-medium '>Frequently asked questions</h2>
-      <div class='faq__tabs tab'>
-        <div class='tab'>
-          <h3 class='tab__title'>Reque insolens in vel?</h3>
-          <p class='tab__text'>
-            Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-          </p>
-          <button class='tab__button'>Go to documentation</button>
-        </div>
-        <div class='tab'>
-          <h3 class='tab__title'>Vis rebum error graecis ea, id sit postea accusamus?</h3>
-          <p class='tab__text'>
-            Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-          </p>
-          <button class='tab__button'>Go to documentation</button>
-        </div>
-        <div class='tab'>
-          <h3 class='tab__title'>Lorem repudiandae ne nec?</h3>
-          <p class='tab__text'>
-            Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-          </p>
-          <button class='tab__button'>Go to documentation</button>
-        </div>
-        <div class='tab'>
-          <h3 class='tab__title'>Ad dicit numquam vel. Et eos iudico feugait percipitur?</h3>
-          <p class='tab__text'>
-            Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-          </p>
-          <button class='tab__button'>Go to documentation</button>
-        </div>
-        <div class='tab'>
-          <h3 class='tab__title'>Sea no dico percipitur. Fierent constituam definitiones id eum? </h3>
-          <p class='tab__text'>
-            Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
-          </p>
-          <button class='tab__button'>Go to documentation</button>
+      <div class="faq__wrapper">
+        <p class='faq_subtitle subtitle'>Customer help</p>
+        <h2 class='faq__title title-medium '>Frequently asked questions</h2>
+        <div class='faq__tabs tab'>
+          <div class='tab'>
+            <h3 class='tab__title'>Reque insolens in vel?</h3>
+            <div class="tab__content visually-hidden">
+              <p class='tab__text'>
+                Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+              </p>
+              <button class='tab__button'>Go to documentation</button>
+            </div>
+          </div>
+          <div class='tab'>
+            <h3 class='tab__title'>Vis rebum error graecis ea, id sit postea accusamus?</h3>
+            <div class="tab__content visually-hidden">
+              <p class='tab__text'>
+                Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+              </p>
+              <button class='tab__button'>Go to documentation</button>
+            </div>
+          </div>
+          <div class='tab'>
+            <h3 class='tab__title'>Lorem repudiandae ne nec?</h3>
+            <div class="tab__content">
+              <p class='tab__text'>
+                Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+              </p>
+              <button class='tab__button'>Go to documentation</button>
+            </div>
+          </div>
+          <div class='tab'>
+            <h3 class='tab__title'>Ad dicit numquam vel. Et eos iudico feugait percipitur?</h3>
+            <div class="tab__content visually-hidden">
+              <p class='tab__text'>
+                Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+              </p>
+              <button class='tab__button'>Go to documentation</button>
+            </div>
+          </div>
+          <div class='tab'>
+            <h3 class='tab__title'>Sea no dico percipitur. Fierent constituam definitiones id eum? </h3>
+            <div class="tab__content visually-hidden">
+              <p class='tab__text'>
+                Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+              </p>
+              <button class='tab__button'>Go to documentation</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -210,33 +236,34 @@
       <p class='start__subtitle subtitle'>Plan your life</p>
       <h2 class='start__title title-main'>Get <strong>started</strong> now</h2>
       <p class='start__text'>
-        Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens
-        gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea.
-        Mea ex malis mollis oporteat. Eum an expetenda consequat.
+        Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui
+        laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.
       </p>
       <div class='start__buttons-wrapper'>
-        <button class='start__button'>View pricing</button>
-        <button class='start__button'>Read documentation</button>
+        <button class='start__button start__button--pricing'>View pricing</button>
+        <button class='start__button start__button--documentation'>Read documentation</button>
       </div>
     </section>
 
     <section class='newsletter'>
-      <div class='newsletter__info'>
-        <h2 class='newsletter__title'>Sign up for newsletter</h2>
-        <p class='newsletter__text'>Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</p>
-      </div>
-      <div class='newsletter__form subscription'>
-        <form class='subscription__form' action='index.html' method='post'>
-          <input type='email' name='email' value='Email address'>
-          <input type='submit' value='Save me'>
-        </form>
+      <div class="newsletter__wrapper">
+        <div class='newsletter__info'>
+          <h2 class='newsletter__title'>Sign up for newsletter</h2>
+          <p class='newsletter__text'>Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</p>
+        </div>
+        <div class='newsletter__form subscription'>
+          <form class='subscription__form' action='index.html' method='post'>
+            <input class='subscription__input' type='email' name='email' placeholder='Email address'>
+            <input class='subscription__btn' type='submit' value='Save me'>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class='page-footer'>
     <div class='navigation'>
-      <a href='#'><img src='https://via.placeholder.com/26' width='26' height='26'></a>
+      <a class='navigation__logo' href='#'><img></a>
       <nav class='navigation__menu menu'>
         <ul class='menu__list'>
           <li class='menu__item'><a href='#'>Home</a></li>
@@ -247,10 +274,10 @@
         </ul>
       </nav>
       <ul class='navigation__social social'>
-        <li class='social__item'><a href='#'><img src='img/facebook__logo.svg' width='8.71' height='17' alt='Facebook' /></a></li>
-        <li class='social__item'><a href='#'><img src='img/telegram__logo.svg' width='14.7' height='11.79' alt='Telegram' /></a></li>
-        <li class='social__item'><a href='#'><img src='img/twitter__logo.svg' width='16.51' height='13.78' alt='Twitter' /></a></li>
-        <li class='social__item'><a href='#'><img src='img/medium__logo.svg' width='16.51' height='12.86' alt='Medium' /></a></li>
+        <li class='social__item'><a href='#'><img class='svg' src='img/facebook__logo.svg' width='8.71' height='17' alt='Facebook' /></a></li>
+        <li class='social__item'><a href='#'><img class='svg' src='img/telegram__logo.svg' width='14.7' height='11.79' alt='Telegram' /></a></li>
+        <li class='social__item'><a href='#'><img class='svg' src='img/twitter__logo.svg' width='16.51' height='13.78' alt='Twitter' /></a></li>
+        <li class='social__item'><a href='#'><img class='svg' src='img/medium__logo.svg' width='16.51' height='12.86' alt='Medium' /></a></li>
       </ul>
       <button class='navigation__btn'>Get started</button>
     </div>
