@@ -130,23 +130,53 @@
     <section class='blog'>
       <p class='blog__subtitle subtitle'>Our resourses</p>
       <h2 class='blog__title title-medium '>Start reading our blog</h2>
-      <div class='blog__slider'>
-        <div class='blog__card'>
-          <div class='blog__images'>
+      <div class='blog__slider slider'>
 
-          </div>
-          <div class='blog__post post'>
-            <h3 class='post__title'>How to start planning</h3>
-            <p class='post__text'>
-              Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos,
-              vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea.
-              Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...
-            </p>
-            <div class='post__buttons btn'>
-              <button class='btn__more'>Read now</button>
-              <button class='btn__bookmark'>Add to your bookmarks</button>
+        <div class='slider__arrow slider__arrow--left' id='previous'></div>
+
+        <ul class='slider__list'>
+          <li class='slider__item showing'>
+            <div class='blog__card'>
+              <div class='blog__images'>
+              </div>
+              <div class='blog__post post'>
+                <h3 class='post__title'>How to start planning</h3>
+                <p class='post__text'>
+                  Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos,
+                  vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea.
+                  Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...
+                </p>
+                <div class='post__buttons btn'>
+                  <button class='btn__more'>Read now</button>
+                  <button class='btn__bookmark'>Add to your bookmarks</button>
+                </div>
+              </div>
             </div>
-          </div>
+          </li>
+          <li class='slider__item'>
+            <div class='blog__card'>
+              <div class='blog__images'>
+              </div>
+              <div class='blog__post post'>
+                <h3 class='post__title'>How to start planning</h3>
+                <p class='post__text'>
+                  Qфващшваопжывалпо
+                </p>
+                <div class='post__buttons btn'>
+                  <button class='btn__more'>Read now</button>
+                  <button class='btn__bookmark'>Add to your bookmarks</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class='slider__arrow slider__arrow--right' id='next'></div>
+
+        <div class="slider__dots dots">
+          <span class="dots__item" onclick="goToSlide(0)"></span>
+          <span class="dots__item" onclick="goToSlide(1)"></span>
+          <span class="dots__item" onclick="goToSlide(2)"></span>
         </div>
       </div>
     </section>
