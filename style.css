@@ -797,6 +797,7 @@ section {
 /* start */
 .start {
   margin: 0;
+  margin-top: 17px;
   padding: 91px 0 40px;
   background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
 }
@@ -859,7 +860,7 @@ section {
 /* newsletter */
 .newsletter {
   margin: 0;
-  padding: 118px 0;
+  padding: 118px 0 108px;
   background: #FCFDFF;
   border-top: 1px solid #D8E3FE;
   border-bottom: 1px solid #D8E3FE;
@@ -941,7 +942,7 @@ section {
 /* footer */
 .page-footer {
   margin: 0;
-  padding: 65px 0;
+  padding: 75px 0;
 }
 
 .copyright {
