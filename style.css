@@ -713,7 +713,7 @@ section {
 
 .tab {
   text-align: left;
-  padding-bottom: 13px;
+  padding-bottom: 11px;
   border-bottom: 1px solid #D8E3FE;
 }
 
@@ -759,6 +759,7 @@ section {
   display: flex;
   margin: 0;
   padding: 0;
+  padding-bottom: 14px;
   margin-top: -5px;
   margin-left: 80px;
   justify-content: space-between;
@@ -775,7 +776,7 @@ section {
 }
 
 .tab__button {
-  margin-top: -30px;
+  margin-top: -20px;
   width: 195px;
   height: 43px;
   background: #E8ECF4;
