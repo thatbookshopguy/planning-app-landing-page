@@ -16,11 +16,11 @@ for (i = 0; i < acc.length; i++) {
 
 // слайдер
 
-var slides = document.querySelectorAll('.slider__item');
-var currentSlide = 0;
+let slides = document.querySelectorAll('.slider__item');
+let currentSlide = 0;
 
-var next = document.getElementById('next');
-var previous = document.getElementById('previous');
+let next = document.getElementById('next');
+let previous = document.getElementById('previous');
 
 function nextSlide() {
   goToSlide(currentSlide + 1);
@@ -44,7 +44,15 @@ previous.onclick = function () {
   previousSlide();
 };
 
-function exactSlide(n) {
-  currentSlide = n;
-  goToSlide(currentSlide);
-}
+// cлайдер цитат
+
+$(document).ready(function () {
+  $('.quotes__slider').slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 1.5,
+    infinite: false,
+    speed: 1000,
+    variableWidth: true,
+  });
+});

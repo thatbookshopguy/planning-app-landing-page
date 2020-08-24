@@ -459,7 +459,8 @@ section {
   transition: background-color 0.6s ease;
 }
 
-.dots__item:hover {
+.dots__item:hover,
+.dots__item--active {
   background-color: #5283FF;
 }
 
@@ -568,14 +569,14 @@ section {
   padding: 0;
   padding-left: 276px;
   padding-top: 110px;
-  padding-bottom: 165px;
+  padding-bottom: 130px;
   background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
   border-top: 1px solid #D8E3FE;
   border-bottom: 1px solid #D8E3FE;
 }
 
 .quotes__wrapper {
-  width: 1375px;
+  width: 1165px;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -600,17 +601,40 @@ section {
 .quotes__slider {
   margin: 0;
   padding: 0;
-  width: 910px;
+  width: 700px;
   display: flex;
   justify-content: flex-start;
+}
+
+.slick-list {
+  height: 210px;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: flex-start;
+  overflow-y: hidden;
+  width: 420px;
+  height: 210px !important;
+}
+
+.slick-slide {
+  width: 285px;
+  transition: opacity 0.6s ease;
+  opacity: 0.45;
+}
+
+.slick-current {
+  opacity: 1;
 }
 
 .review {
   position: relative;
   margin: 0;
   margin-right: 64px;
+  margin-bottom: 25px;
   padding: 26px 68px 0;
-  width: 282px;
+  width: 285px;
   height: 150px;
   background: #FFFFFF;
   border: 1px solid #D8E3FE;
@@ -634,9 +658,32 @@ section {
   left: 180px;
 }
 
-.review--inactive {
-  opacity: 0.45;
-  filter: drop-shadow(0px 15px 50px #D4DCF1);
+.slick-dots {
+  left: -158px;
+  bottom: -64px;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 8px;
+}
+
+.slick-dots li button::before {
+  cursor: pointer;
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  background-color: #D1D6E3;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 1;
+  /*   transition: background-color 0.6s ease;  */
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: #5283FF;
+  opacity: 1;
 }
 
 /* faq */
