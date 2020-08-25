@@ -22,6 +22,8 @@ let currentSlide = 0;
 let next = document.getElementById('next');
 let previous = document.getElementById('previous');
 
+let dots = document.getElementsByClassName('dots__item');
+
 function nextSlide() {
   goToSlide(currentSlide + 1);
 }
@@ -32,8 +34,10 @@ function previousSlide() {
 
 function goToSlide(n) {
   slides[currentSlide].className = 'slider__item';
+  dots[currentSlide].className = 'dots__item';
   currentSlide = (n + slides.length) % slides.length;
   slides[currentSlide].className = 'slider__item showing';
+  dots[currentSlide].className = 'dots__item dots__item--active';
 }
 
 next.onclick = function () {
@@ -56,3 +60,26 @@ $(document).ready(function () {
     variableWidth: true,
   });
 });
+
+// image popups
+
+let popup = document.getElementById('myPopup');
+let wrapper = document.getElementById('myWrapper');
+let bg = [
+  'url(img/blog__1--large.jpg)',
+  'url(img/blog__2--large.jpeg)',
+  'url(img/blog__3--large.jpeg)',
+];
+
+function showPopup(n) {
+  popup.classList.toggle('popup__content--active');
+  wrapper.classList.toggle('popup__wrapper--active');
+  popup.style.backgroundImage = bg[n];
+  popup.style.backgroundSize = 'cover';
+  popup.style.backgroundPosition = 'center';
+}
+
+function hidePopup() {
+  popup.className = 'popup__content';
+  wrapper.className = 'popup__wrapper';
+}

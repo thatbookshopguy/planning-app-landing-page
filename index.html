@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="normalize.min.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-  
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -141,6 +141,9 @@
           <li class='slider__item showing'>
             <div class='blog__card'>
               <div class='blog__images'>
+                <div class='blog__picture blog__picture--large' onclick="showPopup(0)"><img src='img/blog__1.jpg' alt='How to start planning' width='267' height='267' /></div>
+                <div class='blog__picture blog__picture--small' onclick="showPopup(1)"><img src='img/blog__2.jpg' alt='How to start planning' width='126' height='126' /></div>
+                <div class='blog__picture blog__picture--small' onclick="showPopup(2)"><img src='img/blog__3.jpg' alt='How to start planning' width='126' height='126' /></div>
               </div>
               <div class='blog__post post'>
                 <h3 class='post__title'>How to start planning</h3>
@@ -148,6 +151,34 @@
                   Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos,
                   vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea.
                   Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...
+                </p>
+                <div class='post__buttons btn'>
+                  <button class='btn__more'>Read now</button>
+                  <button class='btn__bookmark'>Add to your bookmarks</button>
+                </div>
+
+              </div>
+              <div class="blog__popups">
+                <div class="blog__popup">
+                  <div class='popup__wrapper' id='myWrapper' onclick="hidePopup()"></div>
+                  <div class="popup__content" id="myPopup"></div>
+                </div>
+                <div class="blog__popup"></div>
+                <div class="blog__popup"></div>
+
+              </div>
+            </div>
+          </li>
+          <li class='slider__item'>
+            <div class='blog__card'>
+              <div class='blog__images'>
+              </div>
+              <div class='blog__post post'>
+                <h3 class='post__title'>Foucault on something</h3>
+                <p class='post__text'>
+                  The fear before the absolute limit of death becomes interiorised in a continual
+                  process of ironisation. Fear was disarmed in advance, made derisory by being tamed
+                  and rendered banal, and constantly paraded in the spectacle of life.
                 </p>
                 <div class='post__buttons btn'>
                   <button class='btn__more'>Read now</button>
@@ -161,9 +192,12 @@
               <div class='blog__images'>
               </div>
               <div class='blog__post post'>
-                <h3 class='post__title'>How to start planning</h3>
+                <h3 class='post__title'>Foucault on Hegel</h3>
                 <p class='post__text'>
-                  Qфващшваопжывалпо
+                  [T]ruly to escape Hegel involves an exact appreciation of the price we have
+                  to pay to detach ourselves from him. It assumes that we are aware of the extent
+                  to which Hegel, insidiously perhaps, is close to us.
+
                 </p>
                 <div class='post__buttons btn'>
                   <button class='btn__more'>Read now</button>
@@ -207,7 +241,7 @@
             </p>
             <img class='review__author' src='img/review__author--1.jpg' alt='Review author' width='62' height='62'>
           </div>
-          
+
           <div class='quotes__card review'>
             <p class='review__text'>
               Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos,
@@ -215,7 +249,7 @@
             </p>
             <img class='review__author' src='img/review__author--1.jpg' alt='Review author' width='62' height='62'>
           </div>
-          
+
           <div class='quotes__card review'>
             <p class='review__text'>
               Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos,
@@ -223,7 +257,7 @@
             </p>
             <img class='review__author' src='img/review__author--1.jpg' alt='Review author' width='62' height='62'>
           </div>
-          
+
           <div class='quotes__card review'>
             <p class='review__text'>
               Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos,
@@ -231,7 +265,7 @@
             </p>
             <img class='review__author' src='img/review__author--1.jpg' alt='Review author' width='62' height='62'>
           </div>
-          
+
           <div class='quotes__card review'>
             <p class='review__text'>
               Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos,
@@ -239,7 +273,7 @@
             </p>
             <img class='review__author' src='img/review__author--1.jpg' alt='Review author' width='62' height='62'>
           </div>
-          
+
           <div class='quotes__card review'>
             <p class='review__text'>
               Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos,

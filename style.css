@@ -406,13 +406,27 @@ section {
   height: 100%;
   opacity: 0;
   z-index: 1;
-  transition: opacity 1s;
   box-sizing: border-box;
 }
 
 .showing {
   opacity: 1;
   z-index: 2;
+  animation: 1s linear 0s 1 normal move_eye;
+}
+
+@keyframes move_eye {
+  0% {
+    left: 15px;
+  }
+
+  50% {
+    left: -15px;
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
 .slider__arrow {
@@ -444,7 +458,6 @@ section {
   position: absolute;
   left: 0;
   top: 578px;
-  z-index: 3;
   text-align: center;
 }
 
@@ -481,7 +494,97 @@ section {
 .blog__images {
   width: 407px;
   height: 267px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
+.blog__picture--large {
+  width: 267px;
+  height: 267px;
+  position: relative;
+}
+
+.blog__picture--small {
+  width: 126px;
+  height: 126px;
+  margin-left: 7px;
+  position: relative;
+}
+
+.blog__picture:hover {
+  cursor: pointer;
+}
+
+.blog__picture::before {
+  content: '';
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  width: 65px;
+  height: 65px;
+  background-image: url(./img/zoom.svg);
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.blog__picture:hover::before {
+  opacity: 1;
+}
+
+
+
+
+.popup__wrapper {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  visibility: hidden;
+}
+
+.popup__wrapper--active {
+  visibility: visible;
+}
+
+.popup__content {
+  visibility: hidden;
+  width: 1274px;
+  max-width: 80%;
+  height: 849px;
+  max-height: 80%;
+  background-color: #555;
+  color: #fff;
+  position: fixed;
+  z-index: 4;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  border: 10px solid #fff;
+  box-shadow: 0px 15px 50px #D4DCF1;
+}
+
+.popup__content--active {
+  visibility: visible;
+  animation: fadeIn 1s
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 
 .blog__post {
   width: 414px;
@@ -678,7 +781,6 @@ section {
   border-radius: 50%;
   display: inline-block;
   opacity: 1;
-  /*   transition: background-color 0.6s ease;  */
 }
 
 .slick-dots li.slick-active button:before {
