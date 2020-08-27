@@ -2,7 +2,7 @@ var acc = document.getElementsByClassName('tab__title');
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function () {
+  acc[i].addEventListener('click', function() {
     this.classList.toggle('active');
 
     var panel = this.nextElementSibling;
@@ -40,17 +40,17 @@ function goToSlide(n) {
   dots[currentSlide].className = 'dots__item dots__item--active';
 }
 
-next.onclick = function () {
+next.onclick = function() {
   nextSlide();
 };
 
-previous.onclick = function () {
+previous.onclick = function() {
   previousSlide();
 };
 
 // cлайдер цитат
 
-$(document).ready(function () {
+$(document).ready(function() {
   $('.quotes__slider').slick({
     arrows: false,
     dots: true,
@@ -83,3 +83,4 @@ function hidePopup() {
   popup.className = 'popup__content';
   wrapper.className = 'popup__wrapper';
 }
+
